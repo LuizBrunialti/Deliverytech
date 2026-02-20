@@ -1,4 +1,4 @@
-ddDeliveryTech API
+DeliveryTech API
 
 API RESTful desenvolvida com Spring Boot 3 e Java 21 para gerenciar um sistema de delivery completo. Este projeto simula as funcionalidades principais de plataformas como iFood e Uber Eats, incluindo autenticação JWT, cache, monitoramento, CI/CD e muito mais.
 
@@ -128,26 +128,26 @@ O sistema conecta três pilares principais: quem compra, quem vende e o registro
 
 ---
 
-1. Cliente (User)
+### 1. Cliente (User)
 - É o ator que inicia o fluxo financeiro do app.
 - Gestão de Perfil: Cadastro e manutenção de dados pessoais e endereços.
 - Busca e Seleção: Navegação por restaurantes e seus respectivos produtos/categorias.
 - Checkout: Criação de novos pedidos adicionando itens ao carrinho.
 - Acompanhamento: Consulta ao status do pedido em tempo real (CRIADO, CONFIRMADO, etc.).
 
-2. Restaurante
+### 2. Restaurante
 - É o parceiro operacional que gerencia o catálogo e a produção.
 - Cardápio Digital: Cadastro, edição e exclusão de produtos e preços.
 - Gestão de Operação: Ativar/desativar o restaurante e atualizar tempos de entrega.
 - Fluxo de Pedidos: Alterar o status do pedido conforme a produção (EM_PREPARACAO -> ENVIADO).
 
-3. Gestão de pedidos (a Entidade central)
+### 3. Gestão de pedidos (a Entidade central)
 - Onde a mágica da persistência de dados acontece.
 - Cálculo de Totais: Soma dos preços unitários dos itens multiplicados pela quantidade.
 - Logística: Vinculação do endereço de entrega ao pedido.
 - Histórico: Registro temporal de quando o pedido foi criado e finalizado.
 
-4. Diagrama simplificado da arquitetura:
+### 4. Diagrama simplificado da arquitetura:
 ```
 graph TD
     A[Cliente] -->|Realiza| B(Pedido)
