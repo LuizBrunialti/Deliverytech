@@ -125,7 +125,9 @@ DELIVERY/
 
 ### Matriz de usabilidade: DeliveryTech
 O sistema conecta três pilares principais: quem compra, quem vende e o registro da transação (o pedido).
+
 ---
+
 1. Cliente (User)
 - É o ator que inicia o fluxo financeiro do app.
 - Gestão de Perfil: Cadastro e manutenção de dados pessoais e endereços.
