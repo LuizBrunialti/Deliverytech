@@ -121,7 +121,13 @@ DELIVERY/
 - Maven: O maestro que baixa e organiza todas essas dependências citadas acima.
 
 ---
-
-
----
-
+## 4. Fluxos princiais e arquitetura
+```
+graph TD
+    A[Cliente] -->|Realiza| B(Pedido)
+    B -->|Contém| C[Itens do Pedido]
+    C -->|Referencia| D[Produtos]
+    E[Restaurante] -->|Gerencia| D
+    E -->|Atualiza Status| B
+    B -->|Notifica| A
+```
