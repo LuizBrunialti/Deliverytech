@@ -99,33 +99,33 @@ DELIVERY/
 ## 3. Bibliotecas e dependências utilizadas
 
 1. Framework Base (Core)
--Spring Boot (v3.2.5): É o "cérebro" do projeto, responsável por orquestrar todas as outras ferramentas com configuração mínima.
+- Spring Boot (v3.2.5): É o "cérebro" do projeto, responsável por orquestrar todas as outras ferramentas com configuração mínima.
 
--Spring MVC: Gerencia a camada de controle (controllers), definindo os endpoints da API de delivery.
+- Spring MVC: Gerencia a camada de controle (controllers), definindo os endpoints da API de delivery.
 
 2. Persistência e Dados
--Spring Data JPA / Hibernate: Facilita a comunicação com o banco de dados, transformando suas classes Java (model) em tabelas automaticamente.
+- Spring Data JPA / Hibernate: Facilita a comunicação com o banco de dados, transformando suas classes Java (model) em tabelas automaticamente.
 
--Banco de Dados H2: Um banco de dados em memória, ideal para desenvolvimento e testes rápidos, pois não exige instalação externa.
+- Banco de Dados H2: Um banco de dados em memória, ideal para desenvolvimento e testes rápidos, pois não exige instalação externa.
 
 3. Segurança e Documentação
--Spring Security & JWT: Camada de proteção que gerencia quem pode acessar o quê (Roles como CLIENTE ou ADMIN) via tokens de autenticação.
+- Spring Security & JWT: Camada de proteção que gerencia quem pode acessar o quê (Roles como CLIENTE ou ADMIN) via tokens de autenticação.
 
--SpringDoc OpenAPI (Swagger): A ferramenta que você abriu recentemente para testar e visualizar seus endpoints de forma interativa.
+- SpringDoc OpenAPI (Swagger): A ferramenta que você abriu recentemente para testar e visualizar seus endpoints de forma interativa.
 
 4. Monitoramento e Observabilidade
--Spring Boot Actuator: Fornece os endpoints de saúde e métricas da aplicação.
+- Spring Boot Actuator: Fornece os endpoints de saúde e métricas da aplicação.
 
--Micrometer (Tracing & Observation): Coleta dados detalhados sobre o desempenho das requisições.
+- Micrometer (Tracing & Observation): Coleta dados detalhados sobre o desempenho das requisições.
 
--Zipkin Reporter: Permite enviar esses dados de rastreamento para uma interface visual externa, ajudando a identificar lentidão no sistema.
+- Zipkin Reporter: Permite enviar esses dados de rastreamento para uma interface visual externa, ajudando a identificar lentidão no sistema.
 
 5. Qualidade e Infraestrutura
--JUnit 5 & MockMvc: Utilizados nos seus testes (ClienteControllerTest) para garantir que as alterações no código não quebrem as funcionalidades existentes.
+- JUnit 5 & MockMvc: Utilizados nos seus testes (ClienteControllerTest) para garantir que as alterações no código não quebrem as funcionalidades existentes.
 
--Docker & Docker Compose: Preparam o ambiente para que o projeto rode da mesma forma em qualquer computador ou servidor.
+- Docker & Docker Compose: Preparam o ambiente para que o projeto rode da mesma forma em qualquer computador ou servidor.
 
--Maven: O maestro que baixa e organiza todas essas dependências citadas acima.
+- Maven: O maestro que baixa e organiza todas essas dependências citadas acima.
 
 ---
 
